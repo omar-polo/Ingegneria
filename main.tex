@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[linktoc=all]{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage[dvipsnames]{xcolor}
+\graphicspath{ {./images/} }
+
+\title{Ingegneria}
+\author{Daniele Olivo}
+\date{Ottobre 2019}
+\renewcommand{\contentsname}{Indice}
+
+% il rientro di un paragrafo
+\setlength{\parindent}{0em}
+
+% lo spazio sopra un paragrafo
+\setlength{\parskip}{0.2em}
+
+\definecolor{myred}{RGB}{255,116,119}
+\definecolor{myblue}{RGB}{0,179,223}
+\newcommand{\red}[1]{\textcolor{myred}{#1}}
+\newcommand{\blue}[1]{\textcolor{myblue}{#1}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents{}
+\newpage
+
+\section{Introduzione}
+DA RIVEDERE E DA COMPLETARE
+\input{capitolo1}
+\newpage
+
+\section{Ingegneria dei sistemi hardware software}
+\input{capitolo2}
+\newpage
+
+\section{Processi software}
+\input{capitolo3}
+\newpage
+
+\addtocounter{section}{-1}
+\section{Modelli processi ISO}
+\input{capitolo3bis}
+\newpage
+
+\end{document}
